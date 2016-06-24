@@ -35,7 +35,9 @@ namespace Bootcamp2016.AmazingRace
                 .PerRequest<LeaderViewModel>()
                 .PerRequest<MapViewModel>()
                 .PerRequest<TabbedViewModel>()
-                .Instance<IMobileServiceClient>(client) 
+                .Instance<IMobileServiceClient>(client)
+                .Singleton<ISettingsService,SettingsService>()
+                .Singleton<IAuthenticationService,AuthenticationService>()
                 ;
 
             DisplayRootView<TabbedViewModel>();
