@@ -7,6 +7,8 @@ namespace Bootcamp2016.AmazingRace.ViewModels
     /// </summary>
     public class DetailViewModel : BaseScreen
     {
-
+		public DetailViewModel() {
+			DisplayName = "Detail";
+		}
     }
 }

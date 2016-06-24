@@ -25,11 +25,16 @@ namespace Bootcamp2016.AmazingRace
             this.container = container;
 
             container
-                .PerRequest<DetailViewModel>()
-                ;
+                .PerRequest<LoginViewModel>()
+				.PerRequest<TabbedViewModel>();
 
-            DisplayRootView<DummyView>();
-        }
+            DisplayRootView<LoginView>();
+
+			var client = new MobileServiceClient(MobileServicesUri, MobileServicesAppKey);
+			container.Singleton<ISettingsService, SettingsService>();
+			//container.Singleton<IMobileServiceClient>(client);
+			//container.Singleton<IDataService, DataService>();
+		}
 
         protected override void PrepareViewFirst(NavigationPage navigationPage)
         {
