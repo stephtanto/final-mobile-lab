@@ -39,8 +39,8 @@ namespace Bootcamp2016.AmazingRace
                 .Singleton<ISettingsService,SettingsService>()
                 .Singleton<IAuthenticationService,AuthenticationService>()
                 ;
-
-            DisplayRootView<TabbedView>();
+			
+            DisplayRootView<LoginView>();
         }
         
         protected override void PrepareViewFirst(NavigationPage navigationPage)

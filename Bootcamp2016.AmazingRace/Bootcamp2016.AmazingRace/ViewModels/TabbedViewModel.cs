@@ -8,9 +8,8 @@ namespace Bootcamp2016.AmazingRace.ViewModels
     /// </summary>
     public class TabbedViewModel : Conductor<BaseScreen>.Collection.OneActive
     {
-		public TabbedViewModel(LeaderViewModel lead, DetailViewModel detail) {
-			Items.Add(lead);
-			Items.Add(detail);
+		public TabbedViewModel(IEnumerable<BaseScreen> tabs) {
+			Items.AddRange(tabs);
 		}
 	}
 }
