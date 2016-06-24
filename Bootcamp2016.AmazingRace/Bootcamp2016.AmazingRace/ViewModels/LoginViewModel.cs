@@ -16,9 +16,8 @@ namespace Bootcamp2016.AmazingRace.ViewModels
 
         public void OnJoin()
         {
+            //NotifyOfPropertyChange(() => JoinCode);
 
-            JoinCode = "Blah";
-            NotifyOfPropertyChange(() => JoinCode);
         }
     }
 
