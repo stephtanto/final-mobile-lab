@@ -33,6 +33,7 @@ namespace Bootcamp2016.AmazingRace.ViewModels
 
         public void OnJoin()
         {
+            _auth.LoginAsync();
             //NotifyOfPropertyChange(() => JoinCode);
 
         }
