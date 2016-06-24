@@ -12,7 +12,7 @@ namespace Bootcamp2016.AmazingRace.ViewModels
     {
         public MapViewModel()
         {
-            var map = new Map(
+            var MyMap = new Map(
             MapSpan.FromCenterAndRadius(
             new Position(37, -122), Distance.FromMiles(0.3)))
             {
