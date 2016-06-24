@@ -61,6 +61,7 @@
     <Compile Include="ViewModels\CluesViewModel.cs" />
     <Compile Include="ViewModels\DetailViewModel.cs" />
     <Compile Include="ViewModels\DummyViewModel.cs" />
+    <Compile Include="ViewModels\LeaderItemViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
     <Compile Include="ViewModels\MapViewModel.cs" />
     <Compile Include="ViewModels\TabbedViewModel.cs" />

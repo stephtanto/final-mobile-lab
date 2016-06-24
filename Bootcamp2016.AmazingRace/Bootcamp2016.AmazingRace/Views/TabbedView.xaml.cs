@@ -7,7 +7,7 @@ using Caliburn.Micro;
 using Xamarin.Forms;
 
 namespace Bootcamp2016.AmazingRace.Views {
-	public partial class TabbedView : ContentPage {
+	public partial class TabbedView : TabbedPage {
 		public TabbedView() {
 			InitializeComponent();
 		}

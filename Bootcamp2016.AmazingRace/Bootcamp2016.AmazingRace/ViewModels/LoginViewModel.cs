@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Bootcamp2016.AmazingRace.Views;
 using Caliburn.Micro.Xamarin.Forms;
-using Xamarin.Forms;
+using Xamarin.Forms;      
 using Bootcamp2016.AmazingRace.Services.Imp;
 using Bootcamp2016.AmazingRace.Models;
 using Bootcamp2016.AmazingRace.Services;
-using System.Collections.Generic;
+using System.Collections.Generic;          
 
 namespace Bootcamp2016.AmazingRace.ViewModels
 {
@@ -17,19 +17,20 @@ namespace Bootcamp2016.AmazingRace.ViewModels
     /// Provides login functionality
     /// </summary>
     public class LoginViewModel : Screen
-    {
+    {                     
         private readonly IDataService _dataService;
         private readonly IAuthenticationService _auth;
-        private readonly ISettingsService _settings;
+        private readonly ISettingsService _settings;   
 
         public INavigationService navigation { get; private set; }
 
         public string JoinCode { get; set; }
 
+
         public LoginViewModel(INavigationService navigation, IDataService dataService, IAuthenticationService auth, ISettingsService settings) {
+            _auth = auth;   
             this.navigation = navigation;
             _dataService = dataService;
-            _auth = auth;
             _settings = settings;
             JoinCode = "seedless";
         }
@@ -37,7 +38,7 @@ namespace Bootcamp2016.AmazingRace.ViewModels
         public async void NextPageCommand() {
             await navigation.NavigateToViewModelAsync<TabbedViewModel>();
         }
-
+             
         public async void Login()
         {
             bool isLogged = await _auth.IsLoggedInAsync();
@@ -61,5 +62,6 @@ namespace Bootcamp2016.AmazingRace.ViewModels
             //_settings.RaceId = "42927fab-04db-462b-b0f9-9a8798e00dff";
             return;
         }
+        
     }
 }

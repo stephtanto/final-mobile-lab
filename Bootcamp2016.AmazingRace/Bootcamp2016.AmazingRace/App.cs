@@ -41,7 +41,7 @@ namespace Bootcamp2016.AmazingRace
                 .Singleton<IAuthenticationService, AuthenticationService>()
                 .Singleton<ISettingsService, SettingsService>()
                 ;
-
+			
             DisplayRootView<LoginView>();
         }
         
