@@ -3,5 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Bootcamp2016.AmazingRace.Views.TabbedView"
              xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
-            Name="Items">
+            Name="Items"
+            ItemsSource="Items">
+  <NavigationPage Title="Schedule" Icon="schedule.png">
+  </NavigationPage>
 </TabbedPage>
