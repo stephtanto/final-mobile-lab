@@ -18,20 +18,20 @@ namespace Bootcamp2016.AmazingRace.Services
 
         Task<Race> GetRaceAsync(string id);
 
-        Task<string> GetNextClueIdAsync(string teamId, string raceId);
+        //Task<string> GetNextClueIdAsync(string teamId, string raceId);
 
-        Task<string> SkipClueAsync(string teamId, string raceId, int skip);
+        //Task<string> SkipClueAsync(string teamId, string raceId, int skip);
 
-        Task<Clue> GetClueAsync(string clueId);
+        //Task<Clue> GetClueAsync(string clueId);
 
         Task<List<Clue>> GetCluesAsync(string raceId);
 
         Task<bool> PostClueResponse(string clueId, double lat, double lng, byte[] dataArray);
 
-        Task<bool> PostLocationUpdate(Location location);
+        //Task<bool> PostLocationUpdate(Location location);
 
-        Task<string> RegisterForPushNotifications(string regId);
+        //Task<string> RegisterForPushNotifications(string regId);
 
-        Task<bool> UpdateDeviceInfoForPushNotifications(string regId, DeviceRegistration device);
+        //Task<bool> UpdateDeviceInfoForPushNotifications(string regId, DeviceRegistration device);
     }
 }

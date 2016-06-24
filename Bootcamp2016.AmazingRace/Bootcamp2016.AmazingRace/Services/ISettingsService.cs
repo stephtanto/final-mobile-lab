@@ -19,6 +19,8 @@ namespace Bootcamp2016.AmazingRace.Services
 
         string RaceId { get; set; }
 
+        string TeamId { get; set; }
+
         string GcmRegistrationId { get; set; }
     }
 }

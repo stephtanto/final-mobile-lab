@@ -63,7 +63,7 @@ namespace Bootcamp2016.AmazingRace.Services
 
             await _accountStore.SaveAsync(account, AuthProvider);
 
-            await _dataService.GetProfileAsync();
+            //await _dataService.GetProfileAsync();
 
             return true;
         }

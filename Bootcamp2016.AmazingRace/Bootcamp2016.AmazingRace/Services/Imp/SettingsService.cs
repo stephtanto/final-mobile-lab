@@ -9,7 +9,7 @@ namespace Bootcamp2016.AmazingRace.Services
 
         private const string RaceIdSettingKey = "race_id";
         private static readonly string RaceIdDefault = "42927fab-04db-462b-b0f9-9a8798e00dff"; // This is the InfusionPractices Race.
-
+        private const string TeamIdSettingKey = "team_id"; 
         private const string GcmRegIdKey = "gcm_registration";
         private static readonly string GcmRegIdDefault = string.Empty;
 
@@ -27,6 +27,12 @@ namespace Bootcamp2016.AmazingRace.Services
         {
             get { return AppSettings.GetValueOrDefault<string>(RaceIdSettingKey); }
             set { AppSettings.AddOrUpdateValue<string>(RaceIdSettingKey, value); }
+        }
+
+        public string TeamId
+        {
+            get { return AppSettings.GetValueOrDefault<string>(TeamIdSettingKey); }
+            set { AppSettings.AddOrUpdateValue<string>(TeamIdSettingKey, value); }
         }
 
         public string GcmRegistrationId
