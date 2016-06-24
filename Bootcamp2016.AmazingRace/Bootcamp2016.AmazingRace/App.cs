@@ -26,9 +26,16 @@ namespace Bootcamp2016.AmazingRace
 
             container
                 .PerRequest<DetailViewModel>()
+                .PerRequest<LoginViewModel>()
+                .PerRequest<BaseViewModel>()
+                .PerRequest<CluesViewModel>()
+                .PerRequest<DummyViewModel>()
+                .PerRequest<LeaderViewModel>()
+                .PerRequest<MapViewModel>()
+                .PerRequest<TabbedViewModel>()
                 ;
 
-            DisplayRootView<DummyView>();
+            DisplayRootView<LoginView>();
         }
 
         protected override void PrepareViewFirst(NavigationPage navigationPage)

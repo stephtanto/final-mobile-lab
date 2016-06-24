@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Bootcamp2016.AmazingRace.Views.LoginView"
+             xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms">
+  <Label Text="Login Page" VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout>
+    <Entry x:Name="joinCode" Text="{Binding JoinCode}"/>
+    <Button cal:Message.Attach="OnJoin" Text="Join Team">
+    </Button>
+  </StackLayout>
+</ContentPage>
