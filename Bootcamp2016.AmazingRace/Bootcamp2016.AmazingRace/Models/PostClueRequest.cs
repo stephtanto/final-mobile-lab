@@ -11,6 +11,9 @@ namespace Bootcamp2016.AmazingRace.Models
     /// </summary>
     public class PostClueRequest
     {
-
+        public string clueId { get; set; }
+        public string data { get; set; }
+        public string latitude { get; set; }
+        public string longitude { get; set; }
     }
 }
