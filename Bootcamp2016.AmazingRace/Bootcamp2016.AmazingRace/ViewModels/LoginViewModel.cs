@@ -34,7 +34,7 @@ namespace Bootcamp2016.AmazingRace.ViewModels
         public async void OnJoin()
         {
 			//NotifyOfPropertyChange(() => JoinCode);
-			await navigation.NavigateToViewAsync<TabbedViewModel>();
+			//await navigation.NavigateToViewAsync<TabbedViewModel>();
         }
     }
 }
