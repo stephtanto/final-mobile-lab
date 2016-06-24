@@ -38,7 +38,7 @@ namespace Bootcamp2016.AmazingRace
                 .Instance<IMobileServiceClient>(client) 
                 ;
 
-            DisplayRootView<LoginView>();
+            DisplayRootView<TabbedViewModel>();
         }
         
         protected override void PrepareViewFirst(NavigationPage navigationPage)
