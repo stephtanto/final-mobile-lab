@@ -24,6 +24,8 @@ namespace Bootcamp2016.AmazingRace
         {
             this.container = container;
 
+            IMobileServiceClient client = new MobileServiceClient(MobileServicesUri, MobileServicesAppKey);
+
             container
                 .PerRequest<DetailViewModel>()
                 .PerRequest<LoginViewModel>()
@@ -33,6 +35,7 @@ namespace Bootcamp2016.AmazingRace
                 .PerRequest<LeaderViewModel>()
                 .PerRequest<MapViewModel>()
                 .PerRequest<TabbedViewModel>()
+                .Instance<IMobileServiceClient>(client) 
                 ;
 
             DisplayRootView<LoginView>();
