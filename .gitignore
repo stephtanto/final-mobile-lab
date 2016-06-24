@@ -183,3 +183,6 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 project.lock.json
+
+*.g.i.cs
+*.cache
