@@ -1,4 +1,4 @@
-﻿
+﻿using Caliburn.Micro;
 
 using System;
 using System.Threading.Tasks;
@@ -12,16 +12,25 @@ namespace Bootcamp2016.AmazingRace.ViewModels
     /// <summary>
     /// Provides login functionality
     /// </summary>
-    public class LoginViewModel : BaseScreen
+    public class LoginViewModel : Screen
     {
-		public INavigationService navigation { get; private set; }
+        public INavigationService navigation { get; private set; }
 
-		public LoginViewModel(INavigationService navigation) {
-			this.navigation = navigation;
-		}
+        public string JoinCode { get; set; }
 
-		public async void NextPageCommand() {
-			await navigation.NavigateToViewModelAsync<TabbedViewModel>();
-		}
-	}
+        public LoginViewModel(INavigationService navigation) {
+            this.navigation = navigation;
+            JoinCode = "Test";
+        }
+
+        public async void NextPageCommand() {
+            await navigation.NavigateToViewModelAsync<TabbedViewModel>();
+        }
+
+        public void OnJoin()
+        {
+            //NotifyOfPropertyChange(() => JoinCode);
+
+        }
+    }
 }

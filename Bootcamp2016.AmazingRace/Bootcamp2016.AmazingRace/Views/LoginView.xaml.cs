@@ -14,5 +14,5 @@ namespace Bootcamp2016.AmazingRace.Views
         {
             InitializeComponent();
         }
-	}
+    }
 }

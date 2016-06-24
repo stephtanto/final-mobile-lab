@@ -21,6 +21,7 @@ namespace Bootcamp2016.AmazingRace.Droid
             base.OnCreate();
             RegisterActivityLifecycleCallbacks(this);
             //A great place to initialize Xamarin.Insights and Dependency Services!
+
         }
 
         public override void OnTerminate()
