@@ -4,7 +4,6 @@
              xmlns:cts="Bootcamp2016.AmazingRace.TemplateSelectors.CaliburnTemplateSelector"
              x:Class="Bootcamp2016.AmazingRace.Views.TabbedView"
              xmlns:cal="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
-            Name="Items"
           ItemsSource="{Binding Items}">
     <TabbedPage.ItemTemplate>
       <cts:CaliburnTemplateSelector />

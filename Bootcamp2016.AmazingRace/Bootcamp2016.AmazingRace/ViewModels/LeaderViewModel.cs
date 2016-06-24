@@ -1,5 +1,7 @@
 ﻿
 
+using System.Collections.Generic;
+
 namespace Bootcamp2016.AmazingRace.ViewModels
 {
     /// <summary>
@@ -7,8 +9,18 @@ namespace Bootcamp2016.AmazingRace.ViewModels
     /// </summary>
     public class LeaderViewModel : BaseScreen
     {
+		public List<LeaderItemViewModel> Leads { get; set; }
+
 		public LeaderViewModel() {
 			DisplayName = "Leader";
+			Leads = new List<LeaderItemViewModel>() {
+				new LeaderItemViewModel() {
+					Title = "ALPHA"
+				},
+				new LeaderItemViewModel() {
+					Title = "BETA"
+				}
+			};
 		}
     }
 }

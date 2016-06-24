@@ -23,5 +23,4 @@ namespace Bootcamp2016.AmazingRace.ViewModels
             };
         }
     }
-    }
 }

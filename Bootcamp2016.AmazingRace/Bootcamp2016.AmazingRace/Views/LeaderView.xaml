@@ -2,6 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Bootcamp2016.AmazingRace.Views.LeaderView"
+             xmlns:cm="clr-namespace:Caliburn.Micro.Xamarin.Forms;assembly=Caliburn.Micro.Platform.Xamarin.Forms"
              Title="Lead">
-  <Label Text="Lead..." VerticalOptions="Center" HorizontalOptions="Center" />
+  <StackLayout>
+    <Label Text="Lead..." />
+    <ListView ItemsSource="{Binding Leads}" HasUnevenRows="True">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <TextCell Text="{Binding Title}">
+          </TextCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
 </ContentPage>
