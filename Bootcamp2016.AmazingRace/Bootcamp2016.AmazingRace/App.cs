@@ -24,8 +24,11 @@ namespace Bootcamp2016.AmazingRace
         {
             this.container = container;
 
+            IMobileServiceClient client = new MobileServiceClient(MobileServicesUri, MobileServicesAppKey);
+
             container
                 .PerRequest<DetailViewModel>()
+                .Instance<IMobileServiceClient>(client)
                 ;
 
             DisplayRootView<DummyView>();
